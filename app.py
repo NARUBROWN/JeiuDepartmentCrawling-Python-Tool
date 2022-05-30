@@ -15,7 +15,7 @@ department_name = ["AI융복합과", "AI전기전자과", "AI정보통신과", "
 baseURL = "https://dep.jeiu.ac.kr/"
 
 for i in department_name:
-    os.mkdir(f'/{i}', 0o777)
+    os.mkdir(f'{os.getcwd()}/{i}')
 
 # 첫번째 반복문
 for i in range(len(department_code)):
